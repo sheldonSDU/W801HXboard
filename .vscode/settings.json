@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "wm_include.h": "c",
+        "wm_internal_flash.h": "c"
+    }
+}

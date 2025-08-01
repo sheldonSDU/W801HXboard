@@ -5,7 +5,6 @@
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
       <Project Name="W800_SDK" ConfigName="BuildSet"/>
-      <Project Name="W800_SDK_BT" ConfigName="BuildSet"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CDK_Workspace>
