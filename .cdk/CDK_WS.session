@@ -6,8 +6,16 @@
     <TabInfo>
       <wxString Value="D:\WinnerMicro\W801HXboard\app\main.c" Name="FileName"/>
       <wxString Value="W800_SDK" Name="ProjectName"/>
-      <int Value="52" Name="FirstVisibleLine"/>
-      <int Value="70" Name="CurrentLine"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="23" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="D:\WinnerMicro\W801HXboard\app\nvs.h" Name="FileName"/>
+      <wxString Value="W800_SDK" Name="ProjectName"/>
+      <int Value="28" Name="FirstVisibleLine"/>
+      <int Value="34" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
