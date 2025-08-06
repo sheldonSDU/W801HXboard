@@ -6,13 +6,28 @@
     <VirtualDirectory Name="os">
       <VirtualDirectory Name="rtos">
         <VirtualDirectory Name="include">
+          <File Name="../../../../../../../src/os/rtos/include/atomic.h">
+            <FileOption/>
+          </File>
           <File Name="../../../../../../../src/os/rtos/include/croutine.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../../../../src/os/rtos/include/deprecated_definitions.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../../../../src/os/rtos/include/event_groups.h">
             <FileOption/>
           </File>
           <File Name="../../../../../../../src/os/rtos/include/FreeRTOS.h">
             <FileOption/>
           </File>
           <File Name="../../../../../../../src/os/rtos/include/FreeRTOSConfig.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../../../../src/os/rtos/include/message_buffer.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../../../../src/os/rtos/include/mpu_prototypes.h">
             <FileOption/>
           </File>
           <File Name="../../../../../../../src/os/rtos/include/mpu_wrappers.h">
@@ -42,6 +57,12 @@
           <File Name="../../../../../../../src/os/rtos/include/StackMacros.h">
             <FileOption/>
           </File>
+          <File Name="../../../../../../../src/os/rtos/include/stack_macros.h">
+            <FileOption/>
+          </File>
+          <File Name="../../../../../../../src/os/rtos/include/stream_buffer.h">
+            <FileOption/>
+          </File>
           <File Name="../../../../../../../src/os/rtos/include/task.h">
             <FileOption/>
           </File>
@@ -60,6 +81,9 @@
           <File Name="../../../../../../../src/os/rtos/source/croutine.c">
             <FileOption/>
           </File>
+          <File Name="../../../../../../../src/os/rtos/source/event_groups.c">
+            <FileOption/>
+          </File>
           <File Name="../../../../../../../src/os/rtos/source/heap_2.c">
             <FileOption/>
           </File>
@@ -72,10 +96,13 @@
           <File Name="../../../../../../../src/os/rtos/source/queue.c">
             <FileOption/>
           </File>
-          <File Name="../../../../../../../src/os/rtos/source/rtostimers.c">
+          <File Name="../../../../../../../src/os/rtos/source/stream_buffer.c">
             <FileOption/>
           </File>
           <File Name="../../../../../../../src/os/rtos/source/tasks.c">
+            <FileOption/>
+          </File>
+          <File Name="../../../../../../../src/os/rtos/source/timers.c">
             <FileOption/>
           </File>
         </VirtualDirectory>
@@ -1107,16 +1134,34 @@
         <File Name="../../../../../../../src/app/bleapp/wm_bt_app.h">
           <FileOption/>
         </File>
-        <File Name="../../../../../../../src/app/bleapp/wm_bt_storage.c">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../src/app/bleapp/wm_bt_storage.h">
-          <FileOption/>
-        </File>
         <File Name="../../../../../../../src/app/bleapp/wm_bt_util.c">
           <FileOption/>
         </File>
         <File Name="../../../../../../../src/app/bleapp/wm_bt_util.h">
+          <FileOption/>
+        </File>
+        <File Name="../../../../../../../src/app/bleapp/wm_ble_mesh.c">
+          <FileOption/>
+        </File>
+        <File Name="../../../../../../../src/app/bleapp/wm_ble_mesh_gen_level_server.c">
+          <FileOption/>
+        </File>
+        <File Name="../../../../../../../src/app/bleapp/wm_ble_mesh_gen_onoff_client.c">
+          <FileOption/>
+        </File>
+        <File Name="../../../../../../../src/app/bleapp/wm_ble_mesh_gen_onoff_server.c">
+          <FileOption/>
+        </File>
+        <File Name="../../../../../../../src/app/bleapp/wm_ble_mesh_health_server.c">
+          <FileOption/>
+        </File>
+        <File Name="../../../../../../../src/app/bleapp/wm_ble_mesh_light_model.c">
+          <FileOption/>
+        </File>
+        <File Name="../../../../../../../src/app/bleapp/wm_ble_mesh_node_demo.c">
+          <FileOption/>
+        </File>
+        <File Name="../../../../../../../src/app/bleapp/wm_ble_mesh_vnd_model.c">
           <FileOption/>
         </File>
       </VirtualDirectory>
@@ -1130,612 +1175,588 @@
       </VirtualDirectory>
     </VirtualDirectory>
     <VirtualDirectory Name="network">
-      <VirtualDirectory Name="api2.0">
-        <File Name="../../../../../../../src/network/api2.0.3/tls_netconn.c">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../src/network/api2.0.3/tls_netconn.h">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../src/network/api2.0.3/tls_sockets.c">
-          <FileOption/>
-        </File>
-      </VirtualDirectory>
-      <VirtualDirectory Name="lwip2.0">
+      <VirtualDirectory Name="lwip2.1.3">
         <VirtualDirectory Name="api">
-          <File Name="../../../../../../../src/network/lwip2.0.3/api/api_lib.c">
+          <File Name="../../../../../../../src/network/lwip2.1.3/api/api_lib.c">
             <FileOption/>
           </File>
-          <File Name="../../../../../../../src/network/lwip2.0.3/api/api_msg.c">
+          <File Name="../../../../../../../src/network/lwip2.1.3/api/api_msg.c">
             <FileOption/>
           </File>
-          <File Name="../../../../../../../src/network/lwip2.0.3/api/err.c">
+          <File Name="../../../../../../../src/network/lwip2.1.3/api/err.c">
             <FileOption/>
           </File>
-          <File Name="../../../../../../../src/network/lwip2.0.3/api/netbuf.c">
+          <File Name="../../../../../../../src/network/lwip2.1.3/api/netbuf.c">
             <FileOption/>
           </File>
-          <File Name="../../../../../../../src/network/lwip2.0.3/api/netdb.c">
+          <File Name="../../../../../../../src/network/lwip2.1.3/api/netdb.c">
             <FileOption/>
           </File>
-          <File Name="../../../../../../../src/network/lwip2.0.3/api/netifapi.c">
+          <File Name="../../../../../../../src/network/lwip2.1.3/api/netifapi.c">
             <FileOption/>
           </File>
-          <File Name="../../../../../../../src/network/lwip2.0.3/api/pppapi.c">
+          <File Name="../../../../../../../src/network/lwip2.1.3/api/if_api.c">
             <FileOption/>
           </File>
-          <File Name="../../../../../../../src/network/lwip2.0.3/api/sockets.c">
+          <File Name="../../../../../../../src/network/lwip2.1.3/api/sockets.c">
             <FileOption/>
           </File>
-          <File Name="../../../../../../../src/network/lwip2.0.3/api/tcpip.c">
+          <File Name="../../../../../../../src/network/lwip2.1.3/api/tcpip.c">
             <FileOption/>
           </File>
         </VirtualDirectory>
         <VirtualDirectory Name="core">
-          <File Name="../../../../../../../src/network/lwip2.0.3/core/alg.c">
+          <File Name="../../../../../../../src/network/lwip2.1.3/core/alg.c">
             <FileOption/>
           </File>
-          <File Name="../../../../../../../src/network/lwip2.0.3/core/def.c">
+          <File Name="../../../../../../../src/network/lwip2.1.3/core/altcp.c">
             <FileOption/>
           </File>
-          <File Name="../../../../../../../src/network/lwip2.0.3/core/dns.c">
+          <File Name="../../../../../../../src/network/lwip2.1.3/core/altcp_alloc.c">
             <FileOption/>
           </File>
-          <File Name="../../../../../../../src/network/lwip2.0.3/core/inet_chksum.c">
+          <File Name="../../../../../../../src/network/lwip2.1.3/core/altcp_tcp.c">
             <FileOption/>
           </File>
-          <File Name="../../../../../../../src/network/lwip2.0.3/core/init.c">
+          <File Name="../../../../../../../src/network/lwip2.1.3/core/def.c">
             <FileOption/>
           </File>
-          <File Name="../../../../../../../src/network/lwip2.0.3/core/ip.c">
+          <File Name="../../../../../../../src/network/lwip2.1.3/core/dns.c">
+            <FileOption/>
+          </File>
+          <File Name="../../../../../../../src/network/lwip2.1.3/core/inet_chksum.c">
+            <FileOption/>
+          </File>
+          <File Name="../../../../../../../src/network/lwip2.1.3/core/init.c">
+            <FileOption/>
+          </File>
+          <File Name="../../../../../../../src/network/lwip2.1.3/core/ip.c">
             <FileOption/>
           </File>
           <VirtualDirectory Name="ipv4">
-            <File Name="../../../../../../../src/network/lwip2.0.3/core/ipv4/autoip.c">
+            <File Name="../../../../../../../src/network/lwip2.1.3/core/ipv4/autoip.c">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/core/ipv4/dhcp.c">
+            <File Name="../../../../../../../src/network/lwip2.1.3/core/ipv4/dhcp.c">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/core/ipv4/etharp.c">
+            <File Name="../../../../../../../src/network/lwip2.1.3/core/ipv4/etharp.c">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/core/ipv4/icmp.c">
+            <File Name="../../../../../../../src/network/lwip2.1.3/core/ipv4/icmp.c">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/core/ipv4/igmp.c">
+            <File Name="../../../../../../../src/network/lwip2.1.3/core/ipv4/igmp.c">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/core/ipv4/ip4.c">
+            <File Name="../../../../../../../src/network/lwip2.1.3/core/ipv4/ip4.c">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/core/ipv4/ip4_addr.c">
+            <File Name="../../../../../../../src/network/lwip2.1.3/core/ipv4/ip4_addr.c">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/core/ipv4/ip4_frag.c">
-              <FileOption/>
-            </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/core/ipv4/ip_frag.c" ExcludeProjConfig="BuildSet">
+            <File Name="../../../../../../../src/network/lwip2.1.3/core/ipv4/ip4_frag.c">
               <FileOption/>
             </File>
           </VirtualDirectory>
           <VirtualDirectory Name="ipv6">
-            <File Name="../../../../../../../src/network/lwip2.0.3/core/ipv6/dhcp6.c">
+            <File Name="../../../../../../../src/network/lwip2.1.3/core/ipv6/dhcp6.c">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/core/ipv6/ethip6.c">
+            <File Name="../../../../../../../src/network/lwip2.1.3/core/ipv6/ethip6.c">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/core/ipv6/icmp6.c">
+            <File Name="../../../../../../../src/network/lwip2.1.3/core/ipv6/icmp6.c">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/core/ipv6/inet6.c">
+            <File Name="../../../../../../../src/network/lwip2.1.3/core/ipv6/inet6.c">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/core/ipv6/ip6.c">
+            <File Name="../../../../../../../src/network/lwip2.1.3/core/ipv6/ip6.c">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/core/ipv6/ip6_addr.c">
+            <File Name="../../../../../../../src/network/lwip2.1.3/core/ipv6/ip6_addr.c">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/core/ipv6/ip6_frag.c">
+            <File Name="../../../../../../../src/network/lwip2.1.3/core/ipv6/ip6_frag.c">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/core/ipv6/mld6.c">
+            <File Name="../../../../../../../src/network/lwip2.1.3/core/ipv6/mld6.c">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/core/ipv6/nd6.c">
+            <File Name="../../../../../../../src/network/lwip2.1.3/core/ipv6/nd6.c">
               <FileOption/>
             </File>
           </VirtualDirectory>
-          <File Name="../../../../../../../src/network/lwip2.0.3/core/mem.c">
+          <File Name="../../../../../../../src/network/lwip2.1.3/core/mem.c">
             <FileOption/>
           </File>
-          <File Name="../../../../../../../src/network/lwip2.0.3/core/memp.c">
+          <File Name="../../../../../../../src/network/lwip2.1.3/core/memp.c">
             <FileOption/>
           </File>
-          <File Name="../../../../../../../src/network/lwip2.0.3/core/netif.c">
+          <File Name="../../../../../../../src/network/lwip2.1.3/core/netif.c">
             <FileOption/>
           </File>
-          <File Name="../../../../../../../src/network/lwip2.0.3/core/pbuf.c">
+          <File Name="../../../../../../../src/network/lwip2.1.3/core/pbuf.c">
             <FileOption/>
           </File>
-          <File Name="../../../../../../../src/network/lwip2.0.3/core/raw.c">
+          <File Name="../../../../../../../src/network/lwip2.1.3/core/raw.c">
             <FileOption/>
           </File>
-          <File Name="../../../../../../../src/network/lwip2.0.3/core/stats.c">
+          <File Name="../../../../../../../src/network/lwip2.1.3/core/stats.c">
             <FileOption/>
           </File>
-          <File Name="../../../../../../../src/network/lwip2.0.3/core/sys.c">
+          <File Name="../../../../../../../src/network/lwip2.1.3/core/sys.c">
             <FileOption/>
           </File>
-          <File Name="../../../../../../../src/network/lwip2.0.3/core/tcp.c">
+          <File Name="../../../../../../../src/network/lwip2.1.3/core/tcp.c">
             <FileOption/>
           </File>
-          <File Name="../../../../../../../src/network/lwip2.0.3/core/tcp_in.c">
+          <File Name="../../../../../../../src/network/lwip2.1.3/core/tcp_in.c">
             <FileOption/>
           </File>
-          <File Name="../../../../../../../src/network/lwip2.0.3/core/tcp_out.c">
+          <File Name="../../../../../../../src/network/lwip2.1.3/core/tcp_out.c">
             <FileOption/>
           </File>
-          <File Name="../../../../../../../src/network/lwip2.0.3/core/timeouts.c">
+          <File Name="../../../../../../../src/network/lwip2.1.3/core/timeouts.c">
             <FileOption/>
           </File>
-          <File Name="../../../../../../../src/network/lwip2.0.3/core/timers.c" ExcludeProjConfig="BuildSet">
-            <FileOption/>
-          </File>
-          <File Name="../../../../../../../src/network/lwip2.0.3/core/udp.c">
+          <File Name="../../../../../../../src/network/lwip2.1.3/core/udp.c">
             <FileOption/>
           </File>
         </VirtualDirectory>
         <VirtualDirectory Name="include">
-          <VirtualDirectory Name="arch">
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/arch/cc.h">
-              <FileOption/>
-            </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/arch/perf.h">
-              <FileOption/>
-            </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/arch/sys_arch.h">
-              <FileOption/>
-            </File>
-          </VirtualDirectory>
           <VirtualDirectory Name="lwip">
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/alg.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/alg.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/api.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/altcp.h">
+              <FileOption/>
+            </File>
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/altcp_tls.h">
+              <FileOption/>
+            </File>
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/altcp_tcp.h">
+              <FileOption/>
+            </File>
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/api.h">
               <FileOption/>
             </File>
             <VirtualDirectory Name="apps">
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/apps/fs.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/apps/fs.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/apps/httpd.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/apps/httpd.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/apps/httpd_opts.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/apps/httpd_opts.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/apps/lwiperf.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/apps/lwiperf.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/apps/mdns.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/apps/mdns.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/apps/mdns_opts.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/apps/mdns_opts.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/apps/mdns_priv.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/apps/mdns_priv.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/apps/mqtt.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/apps/mqtt.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/apps/mqtt_opts.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/apps/mqtt_opts.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/apps/netbiosns.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/apps/netbiosns.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/apps/netbiosns_opts.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/apps/netbiosns_opts.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/apps/snmp.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/apps/snmp.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/apps/snmpv3.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/apps/snmpv3.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/apps/snmp_core.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/apps/snmp_core.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/apps/snmp_mib2.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/apps/snmp_mib2.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/apps/snmp_opts.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/apps/snmp_opts.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/apps/snmp_scalar.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/apps/snmp_scalar.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/apps/snmp_table.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/apps/snmp_table.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/apps/snmp_threadsync.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/apps/snmp_threadsync.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/apps/sntp.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/apps/sntp.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/apps/sntp_opts.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/apps/sntp_opts.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/apps/tftp_opts.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/apps/tftp_opts.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/apps/tftp_server.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/apps/tftp_server.h">
                 <FileOption/>
               </File>
             </VirtualDirectory>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/arch.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/arch.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/autoip.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/autoip.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/debug.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/debug.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/def.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/def.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/dhcp.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/dhcp.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/dhcp6.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/dhcp6.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/dns.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/dns.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/err.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/err.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/errno.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/errno.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/etharp.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/etharp.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/ethip6.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/ethip6.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/icmp.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/icmp.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/icmp6.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/icmp6.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/igmp.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/igmp.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/inet.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/inet.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/inet_chksum.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/inet_chksum.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/init.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/init.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/ip.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/ip.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/ip4.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/ip4.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/ip4_addr.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/ip4_addr.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/ip4_frag.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/ip4_frag.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/ip6.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/ip6.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/ip6_addr.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/ip6_addr.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/ip6_frag.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/ip6_frag.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/ip_addr.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/ip_addr.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/ip_frag.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/tcpbase.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/lwipopts.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/mem.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/mem.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/memp.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/memp.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/mld6.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/mld6.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/nd6.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/nd6.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/netbuf.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/netbuf.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/netdb.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/netdb.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/netif.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/netif.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/netifapi.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/netifapi.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/opt.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/opt.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/pbuf.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/pbuf.h">
-              <FileOption/>
-            </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/pppapi.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/if_api.h">
               <FileOption/>
             </File>
             <VirtualDirectory Name="priv">
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/priv/api_msg.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/priv/api_msg.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/priv/memp_priv.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/priv/memp_priv.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/priv/memp_std.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/priv/memp_std.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/priv/nd6_priv.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/priv/nd6_priv.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/priv/tcpip_priv.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/priv/tcpip_priv.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/priv/tcp_priv.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/priv/tcp_priv.h">
                 <FileOption/>
               </File>
             </VirtualDirectory>
             <VirtualDirectory Name="prot">
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/prot/autoip.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/prot/autoip.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/prot/dhcp.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/prot/dhcp.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/prot/dns.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/prot/dns.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/prot/etharp.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/prot/etharp.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/prot/ethernet.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/prot/ethernet.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/prot/icmp.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/prot/icmp.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/prot/icmp6.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/prot/icmp6.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/prot/igmp.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/prot/igmp.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/prot/ip.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/prot/ip.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/prot/ip4.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/prot/ip4.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/prot/ip6.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/prot/ip6.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/prot/mld6.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/prot/mld6.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/prot/nd6.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/prot/nd6.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/prot/tcp.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/prot/tcp.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/prot/udp.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/prot/udp.h">
                 <FileOption/>
               </File>
             </VirtualDirectory>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/raw.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/raw.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/sio.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/sio.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/snmp.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/snmp.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/sockets.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/sockets.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/stats.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/stats.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/sys.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/sys.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/tcp.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/tcp.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/tcpip.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/tcpip.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/timeouts.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/timeouts.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/timers.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/timers.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/lwip/udp.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/lwip/udp.h">
               <FileOption/>
             </File>
           </VirtualDirectory>
           <VirtualDirectory Name="netif">
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/netif/etharp.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/netif/etharp.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/netif/ethernet.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/netif/ethernet.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/netif/ethernetif.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/netif/ethernetif.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/netif/lowpan6.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/netif/lowpan6.h">
               <FileOption/>
             </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/netif/lowpan6_opts.h">
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/netif/lowpan6_opts.h">
               <FileOption/>
             </File>
             <VirtualDirectory Name="ppp">
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/netif/ppp/ccp.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/netif/ppp/ccp.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/netif/ppp/chap-md5.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/netif/ppp/chap-md5.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/netif/ppp/chap-new.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/netif/ppp/chap-new.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/netif/ppp/chap_ms.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/netif/ppp/chap_ms.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/netif/ppp/eap.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/netif/ppp/eap.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/netif/ppp/ecp.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/netif/ppp/ecp.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/netif/ppp/eui64.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/netif/ppp/eui64.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/netif/ppp/fsm.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/netif/ppp/fsm.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/netif/ppp/ipcp.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/netif/ppp/ipcp.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/netif/ppp/ipv6cp.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/netif/ppp/ipv6cp.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/netif/ppp/lcp.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/netif/ppp/lcp.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/netif/ppp/magic.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/netif/ppp/magic.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/netif/ppp/mppe.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/netif/ppp/mppe.h">
                 <FileOption/>
               </File>
               <VirtualDirectory Name="polarssl">
-                <File Name="../../../../../../../src/network/lwip2.0.3/include/netif/ppp/polarssl/arc4.h">
+                <File Name="../../../../../../../src/network/lwip2.1.3/include/netif/ppp/polarssl/arc4.h">
                   <FileOption/>
                 </File>
-                <File Name="../../../../../../../src/network/lwip2.0.3/include/netif/ppp/polarssl/des.h">
+                <File Name="../../../../../../../src/network/lwip2.1.3/include/netif/ppp/polarssl/des.h">
                   <FileOption/>
                 </File>
-                <File Name="../../../../../../../src/network/lwip2.0.3/include/netif/ppp/polarssl/md4.h">
+                <File Name="../../../../../../../src/network/lwip2.1.3/include/netif/ppp/polarssl/md4.h">
                   <FileOption/>
                 </File>
-                <File Name="../../../../../../../src/network/lwip2.0.3/include/netif/ppp/polarssl/md5.h">
+                <File Name="../../../../../../../src/network/lwip2.1.3/include/netif/ppp/polarssl/md5.h">
                   <FileOption/>
                 </File>
-                <File Name="../../../../../../../src/network/lwip2.0.3/include/netif/ppp/polarssl/sha1.h">
+                <File Name="../../../../../../../src/network/lwip2.1.3/include/netif/ppp/polarssl/sha1.h">
                   <FileOption/>
                 </File>
               </VirtualDirectory>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/netif/ppp/ppp.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/netif/ppp/ppp.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/netif/ppp/pppapi.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/netif/ppp/pppapi.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/netif/ppp/pppcrypt.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/netif/ppp/pppcrypt.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/netif/ppp/pppdebug.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/netif/ppp/pppdebug.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/netif/ppp/pppoe.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/netif/ppp/pppoe.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/netif/ppp/pppol2tp.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/netif/ppp/pppol2tp.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/netif/ppp/pppos.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/netif/ppp/pppos.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/netif/ppp/ppp_impl.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/netif/ppp/ppp_impl.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/netif/ppp/ppp_opts.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/netif/ppp/ppp_opts.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/netif/ppp/upap.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/netif/ppp/upap.h">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/netif/ppp/vj.h">
-                <FileOption/>
-              </File>
-            </VirtualDirectory>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/netif/slipif.h">
-              <FileOption/>
-            </File>
-          </VirtualDirectory>
-          <VirtualDirectory Name="posix">
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/posix/errno.h">
-              <FileOption/>
-            </File>
-            <File Name="../../../../../../../src/network/lwip2.0.3/include/posix/netdb.h">
-              <FileOption/>
-            </File>
-            <VirtualDirectory Name="sys">
-              <File Name="../../../../../../../src/network/lwip2.0.3/include/posix/sys/socket.h">
+              <File Name="../../../../../../../src/network/lwip2.1.3/include/netif/ppp/vj.h">
                 <FileOption/>
               </File>
             </VirtualDirectory>
+            <File Name="../../../../../../../src/network/lwip2.1.3/include/netif/slipif.h">
+              <FileOption/>
+            </File>
           </VirtualDirectory>
         </VirtualDirectory>
         <VirtualDirectory Name="netif">
-          <File Name="../../../../../../../src/network/lwip2.0.3/netif/ethernet.c">
+          <File Name="../../../../../../../src/network/lwip2.1.3/netif/ethernet.c">
             <FileOption/>
           </File>
-          <File Name="../../../../../../../src/network/lwip2.0.3/netif/ethernetif.c">
+          <File Name="../../../../../../../src/network/lwip2.1.3/netif/ethernetif.c" ExcludeProjConfig="">
             <FileOption/>
           </File>
-          <File Name="../../../../../../../src/network/lwip2.0.3/netif/lowpan6.c" ExcludeProjConfig="BuildSet">
-            <FileOption/>
-          </File>
-          <File Name="../../../../../../../src/network/lwip2.0.3/netif/slipif.c" ExcludeProjConfig="BuildSet">
-            <FileOption/>
-          </File>
-          <File Name="../../../../../../../src/network/lwip2.0.3/netif/wm_ethernet.c">
+          <File Name="../../../../../../../src/network/lwip2.1.3/netif/wm_ethernet.c" ExcludeProjConfig="">
             <FileOption/>
           </File>
         </VirtualDirectory>
-        <File Name="../../../../../../../src/network/lwip2.0.3/sys_arch.c">
+        <File Name="../../../../../../../src/network/lwip2.1.3/sys_arch.c" ExcludeProjConfig="">
+          <FileOption/>
+        </File>
+      </VirtualDirectory>
+      <VirtualDirectory Name="api_wm">
+        <File Name="../../../../../../../src/network/api_wm/tls_netconn.c">
+          <FileOption/>
+        </File>
+        <File Name="../../../../../../../src/network/api_wm/tls_netconn.h">
           <FileOption/>
         </File>
       </VirtualDirectory>
@@ -2079,6 +2100,9 @@
                 <File Name="../../../../../../../src/bt/blehost/nimble/host/mesh/src/transport.h">
                   <FileOption/>
                 </File>
+                <File Name="../../../../../../../src/bt/blehost/nimble/host/mesh/src/wm_ble_mesh_store.c">
+                  <FileOption/>
+                </File>
               </VirtualDirectory>
             </VirtualDirectory>
             <VirtualDirectory Name="services">
@@ -2330,6 +2354,9 @@
                   <File Name="../../../../../../../src/bt/blehost/nimble/host/store/config/src/ble_store_nvram.c">
                     <FileOption/>
                   </File>
+                  <File Name="../../../../../../../src/bt/blehost/nimble/host/store/config/src/wm_bt_storage.c">
+                    <FileOption/>
+                  </File>
                 </VirtualDirectory>
               </VirtualDirectory>
               <VirtualDirectory Name="ram">
@@ -2523,9 +2550,6 @@
               <File Name="../../../../../../../src/bt/blehost/porting/w800/src/nimble_port.c">
                 <FileOption/>
               </File>
-              <File Name="../../../../../../../src/bt/blehost/porting/w800/src/nimble_port_freertos.c">
-                <FileOption/>
-              </File>
               <File Name="../../../../../../../src/bt/blehost/porting/w800/src/npl_os_freertos.c">
                 <FileOption/>
               </File>
@@ -2544,351 +2568,6 @@
             </VirtualDirectory>
           </VirtualDirectory>
         </VirtualDirectory>
-      </VirtualDirectory>
-    </VirtualDirectory>
-    <VirtualDirectory Name="user">
-      <File Name="../../../../../../../src/user/user_config.h">
-        <FileOption/>
-      </File>
-      <File Name="../../../../../../../src/user/user_fatfs_funcs.c">
-        <FileOption/>
-      </File>
-      <File Name="../../../../../../../src/user/user_fatfs_funcs.h">
-        <FileOption/>
-      </File>
-      <File Name="../../../../../../../src/user/user_http_server.c">
-        <FileOption/>
-      </File>
-      <File Name="../../../../../../../src/user/user_http_server.h">
-        <FileOption/>
-      </File>
-      <File Name="../../../../../../../src/user/user_net_links.c">
-        <FileOption/>
-      </File>
-      <File Name="../../../../../../../src/user/user_net_links.h">
-        <FileOption/>
-      </File>
-      <File Name="../../../../../../../src/user/user_uarts.c">
-        <FileOption/>
-      </File>
-      <File Name="../../../../../../../src/user/user_uarts.h">
-        <FileOption/>
-      </File>
-      <File Name="../../../../../../../src/user/lcd_nv3041.c">
-        <FileOption/>
-      </File>
-      <File Name="../../../../../../../src/user/lcd_nv3041.h">
-        <FileOption/>
-      </File>
-      <File Name="../../../../../../../src/user/camera_main.c">
-        <FileOption/>
-      </File>
-      <File Name="../../../../../../../src/user/softDelay.c">
-        <FileOption/>
-      </File>
-      <File Name="../../../../../../../src/user/fastmath.c">
-        <FileOption/>
-      </File>
-      <File Name="../../../../../../../src/user/fastmathAsinTab.c">
-        <FileOption/>
-      </File>
-      <File Name="../../../../../../../src/user/fastmathCosTab.c">
-        <FileOption/>
-      </File>
-      <File Name="../../../../../../../src/user/usermath.c">
-        <FileOption/>
-      </File>
-      <File Name="../../../../../../../src/user/hxDSP.c">
-        <FileOption/>
-      </File>
-      <File Name="../../../../../../../src/user/basicGraphics.c">
-        <FileOption/>
-      </File>
-      <File Name="../../../../../../../src/user/basicFont.c">
-        <FileOption/>
-      </File>
-      <File Name="../../../../../../../src/user/bsp_spi_flash.c">
-        <FileOption/>
-      </File>
-      <File Name="../../../../../../../src/user/bsp_eeprom_24xx.c">
-        <FileOption/>
-      </File>
-      <File Name="../../../../../../../src/user/bsp_i2s.c">
-        <FileOption/>
-      </File>
-      <File Name="../../../../../../../src/user/basicWidgets.c">
-        <FileOption/>
-      </File>
-      <File Name="../../../../../../../src/user/bsp_LedKeyUserIO.c">
-        <FileOption/>
-      </File>
-      <File Name="../../../../../../../src/user/bsp_LedKeyUserIO.h">
-        <FileOption/>
-      </File>
-      <File Name="../../../../../../../src/user/bsp_touch.c">
-        <FileOption/>
-      </File>
-      <File Name="../../../../../../../src/user/bsp_tsc2046.c">
-        <FileOption/>
-      </File>
-      <File Name="../../../../../../../src/user/bsp_gt911.c">
-        <FileOption/>
-      </File>
-    </VirtualDirectory>
-    <VirtualDirectory Name="audio">
-      <File Name="../../../../../../../components/audio/audio_task.c">
-        <FileOption/>
-      </File>
-      <File Name="../../../../../../../components/audio/audio_task.h">
-        <FileOption/>
-      </File>
-      <File Name="../../../../../../../components/audio/dev_ringbuf.c">
-        <FileOption/>
-      </File>
-      <File Name="../../../../../../../components/audio/dev_ringbuf.h">
-        <FileOption/>
-      </File>
-      <File Name="../../../../../../../components/audio/pvmp3_dec.c">
-        <FileOption/>
-      </File>
-      <File Name="../../../../../../../components/audio/pvmp3_dec.h">
-        <FileOption/>
-      </File>
-      <File Name="../../../../../../../components/audio/cdc_es8311.c">
-        <FileOption/>
-      </File>
-      <File Name="../../../../../../../components/audio/audiofifo.h">
-        <FileOption/>
-      </File>
-      <File Name="../../../../../../../components/audio/audiofifo.c">
-        <FileOption/>
-      </File>
-    </VirtualDirectory>
-    <VirtualDirectory Name="audio_pvmp3dec">
-      <VirtualDirectory Name="include">
-        <File Name="../../../../../../../components/audio_pvmp3dec/include/mp3_decoder_selection.h">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/include/mp3_mem_funcs.h">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/include/pvmp3decoder_api.h">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/include/pvmp3_alias_reduction.h">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/include/pvmp3_audio_type_defs.h">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/include/pvmp3_crc.h">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/include/pvmp3_dct_16.h">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/include/pvmp3_decode_header.h">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/include/pvmp3_decode_huff_cw.h">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/include/pvmp3_dec_defs.h">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/include/pvmp3_dequantize_sample.h">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/include/pvmp3_equalizer.h">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/include/pvmp3_framedecoder.h">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/include/pvmp3_getbits.h">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/include/pvmp3_get_main_data_size.h">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/include/pvmp3_get_scale_factors.h">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/include/pvmp3_get_side_info.h">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/include/pvmp3_imdct_synth.h">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/include/pvmp3_mdct_18.h">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/include/pvmp3_mdct_6.h">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/include/pvmp3_mpeg2_get_scale_data.h">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/include/pvmp3_mpeg2_get_scale_factors.h">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/include/pvmp3_mpeg2_stereo_proc.h">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/include/pvmp3_normalize.h">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/include/pvmp3_polyphase_filter_window.h">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/include/pvmp3_poly_phase_synthesis.h">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/include/pvmp3_reorder.h">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/include/pvmp3_seek_synch.h">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/include/pvmp3_stereo_proc.h">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/include/pvmp3_tables.h">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/include/pv_mp3dec_fxd_op.h">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/include/pv_mp3dec_fxd_op_arm.h">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/include/pv_mp3dec_fxd_op_arm_gcc.h">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/include/pv_mp3dec_fxd_op_c_equivalent.h">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/include/pv_mp3dec_fxd_op_msc_evc.h">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/include/pv_mp3_huffman.h">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/include/s_huffcodetab.h">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/include/s_mp3bits.h">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/include/s_tmp3dec_chan.h">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/include/s_tmp3dec_file.h">
-          <FileOption/>
-        </File>
-      </VirtualDirectory>
-      <VirtualDirectory Name="src">
-        <VirtualDirectory Name="asm" ExcludeProjConfig="BuildSet">
-          <File Name="../../../../../../../components/audio_pvmp3dec/src/asm/pvmp3_dct_16_gcc.s">
-            <FileOption/>
-          </File>
-          <File Name="../../../../../../../components/audio_pvmp3dec/src/asm/pvmp3_dct_9_gcc.s">
-            <FileOption/>
-          </File>
-          <File Name="../../../../../../../components/audio_pvmp3dec/src/asm/pvmp3_mdct_18_gcc.s">
-            <FileOption/>
-          </File>
-          <File Name="../../../../../../../components/audio_pvmp3dec/src/asm/pvmp3_polyphase_filter_window_gcc.s">
-            <FileOption/>
-          </File>
-        </VirtualDirectory>
-        <File Name="../../../../../../../components/audio_pvmp3dec/src/pvmp3_alias_reduction.cpp">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/src/pvmp3_crc.cpp">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/src/pvmp3_dct_16.cpp">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/src/pvmp3_dct_6.cpp">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/src/pvmp3_dct_9.cpp">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/src/pvmp3_decode_header.cpp">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/src/pvmp3_decode_huff_cw.cpp">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/src/pvmp3_dequantize_sample.cpp">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/src/pvmp3_equalizer.cpp">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/src/pvmp3_framedecoder.cpp">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/src/pvmp3_getbits.cpp">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/src/pvmp3_get_main_data_size.cpp">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/src/pvmp3_get_scale_factors.cpp">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/src/pvmp3_get_side_info.cpp">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/src/pvmp3_huffman_decoding.cpp">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/src/pvmp3_huffman_parsing.cpp">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/src/pvmp3_imdct_synth.cpp">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/src/pvmp3_mdct_18.cpp">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/src/pvmp3_mdct_6.cpp">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/src/pvmp3_mpeg2_get_scale_data.cpp">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/src/pvmp3_mpeg2_get_scale_factors.cpp">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/src/pvmp3_mpeg2_stereo_proc.cpp">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/src/pvmp3_normalize.cpp">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/src/pvmp3_polyphase_filter_window.cpp">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/src/pvmp3_poly_phase_synthesis.cpp">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/src/pvmp3_reorder.cpp">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/src/pvmp3_seek_synch.cpp">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/src/pvmp3_stereo_proc.cpp">
-          <FileOption/>
-        </File>
-        <File Name="../../../../../../../components/audio_pvmp3dec/src/pvmp3_tables.cpp">
-          <FileOption/>
-        </File>
       </VirtualDirectory>
     </VirtualDirectory>
   </VirtualDirectory>
@@ -2994,6 +2673,12 @@
       </VirtualDirectory>
       <VirtualDirectory Name="adc">
         <File Name="../../../../../../../platform/drivers/adc/wm_adc.c">
+          <FileOption/>
+        </File>
+        <File Name="../../../../../../../platform/drivers/adc/wm_polyfit.c">
+          <FileOption/>
+        </File>
+        <File Name="../../../../../../../platform/drivers/adc/wm_adc_cal.c">
           <FileOption/>
         </File>
       </VirtualDirectory>
@@ -3168,12 +2853,6 @@
           <File Name="../../../../../../../include/arch/xt804/csi_dsp/csky_math.h">
             <FileOption/>
           </File>
-          <File Name="../../../../../../../include/arch/xt804/csi_dsp/csky_vdsp2_const_structs.h">
-            <FileOption/>
-          </File>
-          <File Name="../../../../../../../include/arch/xt804/csi_dsp/csky_vdsp2_math.h">
-            <FileOption/>
-          </File>
         </VirtualDirectory>
       </VirtualDirectory>
     </VirtualDirectory>
@@ -3339,13 +3018,13 @@
       <File Name="../../../../../../../include/net/wm_socket.h">
         <FileOption/>
       </File>
-      <File Name="../../../../../../../include/net/wm_socket2.0.3.h">
+      <File Name="../../../../../../../include/net/wm_socket2.1.3.h">
         <FileOption/>
       </File>
       <File Name="../../../../../../../include/net/wm_sockets.h">
         <FileOption/>
       </File>
-      <File Name="../../../../../../../include/net/wm_sockets2.0.3.h">
+      <File Name="../../../../../../../include/net/wm_sockets2.1.3.h">
         <FileOption/>
       </File>
     </VirtualDirectory>
@@ -3368,7 +3047,7 @@
       <File Name="../../../../../../../include/app/wm_netif.h">
         <FileOption/>
       </File>
-      <File Name="../../../../../../../include/app/wm_netif2.0.3.h">
+      <File Name="../../../../../../../include/app/wm_netif2.1.3.h">
         <FileOption/>
       </File>
       <File Name="../../../../../../../include/app/wm_ntp.h">
@@ -3537,20 +3216,25 @@
     <File Name="../../../../../../../demo/wm_touchsensor_demo.c">
       <FileOption/>
     </File>
+    <File Name="../../../../../../../demo/wm_avoid_copy_demo.c">
+      <FileOption/>
+    </File>
+    <File Name="../../../../../../../demo/wm_lcd_demo.c">
+      <FileOption/>
+    </File>
   </VirtualDirectory>
   <Dependencies Name="BuildSet"/>
-  <MonitorProgress>
-    <FlashOperate>188</FlashOperate>
-    <DebugLaunch>205</DebugLaunch>
-  </MonitorProgress>
+  <VendorInfo>
+    <VendorName>NULL</VendorName>
+  </VendorInfo>
   <BuildConfigs>
     <BuildConfig Name="BuildSet">
       <Target>
         <ROMBank Selected="1">
           <ROM1>
             <InUse>yes</InUse>
-            <Start>0x08000000</Start>
-            <Size>0x200000</Size>
+            <Start>0x0</Start>
+            <Size>0x5000</Size>
           </ROM1>
           <ROM2>
             <InUse>no</InUse>
@@ -3616,7 +3300,7 @@
       <Output>
         <OutputName>w800</OutputName>
         <Type>Executable</Type>
-        <CreateHexFile>yes</CreateHexFile>
+        <CreateHexFile>no</CreateHexFile>
         <CreateBinFile>yes</CreateBinFile>
         <Preprocessor>no</Preprocessor>
         <Disassmeble>yes</Disassmeble>
@@ -3638,11 +3322,11 @@
         </AfterMake>
       </User>
       <Compiler>
-        <Define>GCC_COMPILE=1;TLS_CONFIG_CPU_XT804=1;NIMBLE_FTR=1</Define>
+        <Define>GCC_COMPILE=1;TLS_CONFIG_CPU_XT804=1;NIMBLE_FTR=1;NO_PERSISTENCE=1;USE_SELECT=1;HIGH_PERFORMANCE=1;USE_MBEDTLS=1</Define>
         <Undefine/>
-        <Optim>Optimize most (-O3)</Optim>
-        <DebugLevel>Default (-g)</DebugLevel>
-        <IncludePath>$(CDKPath)/CSKY/MinGW/csky-abiv2-elf-toolchain/csky-elfabiv2/include;$(ProjectPath);$(ProjectPath)/../../../../../../../components/audio;$(ProjectPath)/../../../../../../../components/audio_pvmp3dec/include;$(ProjectPath)/../../../../../../../demo;$(ProjectPath)/../../../../../../../include;$(ProjectPath)/../../../../../../../include/app;$(ProjectPath)/../../../../../../../include/arch/xt804;$(ProjectPath)/../../../../../../../include/arch/xt804/csi_core;$(ProjectPath)/../../../../../../../include/arch/xt804/csi_dsp;$(ProjectPath)/../../../../../../../include/bt;$(ProjectPath)/../../../../../../../include/driver;$(ProjectPath)/../../../../../../../include/net;$(ProjectPath)/../../../../../../../include/os;$(ProjectPath)/../../../../../../../include/platform;$(ProjectPath)/../../../../../../../include/wifi;$(ProjectPath)/../../../../../../../platform/common/params;$(ProjectPath)/../../../../../../../platform/drivers/spi;$(ProjectPath)/../../../../../../../platform/inc;$(ProjectPath)/../../../../../../../platform/sys;$(ProjectPath)/../../../../../../../src/app;$(ProjectPath)/../../../../../../../src/app/bleapp;$(ProjectPath)/../../../../../../../src/app/btapp;$(ProjectPath)/../../../../../../../src/app/cJSON;$(ProjectPath)/../../../../../../../src/app/dhcpserver;$(ProjectPath)/../../../../../../../src/app/dnsserver;$(ProjectPath)/../../../../../../../src/app/factorycmd;$(ProjectPath)/../../../../../../../src/app/fatfs;$(ProjectPath)/../../../../../../../src/app/httpclient;$(ProjectPath)/../../../../../../../src/app/iperf;$(ProjectPath)/../../../../../../../src/app/libcoap/include;$(ProjectPath)/../../../../../../../src/app/libwebsockets-2.1-stable;$(ProjectPath)/../../../../../../../src/app/mDNS/mDNSCore;$(ProjectPath)/../../../../../../../src/app/mDNS/mDNSPosix;$(ProjectPath)/../../../../../../../src/app/mbedtls/include;$(ProjectPath)/../../../../../../../src/app/mbedtls/include/mbedtls;$(ProjectPath)/../../../../../../../src/app/mbedtls/ports;$(ProjectPath)/../../../../../../../src/app/mqtt;$(ProjectPath)/../../../../../../../src/app/oneshotconfig;$(ProjectPath)/../../../../../../../src/app/ota;$(ProjectPath)/../../../../../../../src/app/ping;$(ProjectPath)/../../../../../../../src/app/polarssl/include;$(ProjectPath)/../../../../../../../src/app/web;$(ProjectPath)/../../../../../../../src/app/wm_atcmd;$(ProjectPath)/../../../../../../../src/bt/blehost/ext/tinycrypt/include;$(ProjectPath)/../../../../../../../src/bt/blehost/ext/tinycrypt/include/tinycrypt;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/include;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/include/host;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/mesh/include;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/mesh/include/mesh;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/mesh/src;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/porting/w800/include;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/services/gap/include;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/services/gap/include/services/gap;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/services/gatt/include;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/services/gatt/include/services/gatt;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/src;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/store/config/include;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/store/config/include/store/config;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/store/config/src;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/store/ram/include;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/store/ram/include/store/ram;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/util/include;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/util/include/host/util;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/include;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/include/nimble;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/transport/uart/include;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/transport/uart/include/transport/uart;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include/hal;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include/log;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include/log_common;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include/logcfg;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include/mem;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include/modlog;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include/nimble;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include/os;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include/stats;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include/syscfg;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include/sysflash;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include/sysinit;$(ProjectPath)/../../../../../../../src/network/api2.0.3;$(ProjectPath)/../../../../../../../src/network/lwip2.0.3/apps/httpd;$(ProjectPath)/../../../../../../../src/network/lwip2.0.3/apps/snmp;$(ProjectPath)/../../../../../../../src/network/lwip2.0.3/include;$(ProjectPath)/../../../../../../../src/network/lwip2.0.3/include/arch;$(ProjectPath)/../../../../../../../src/network/lwip2.0.3/include/lwip;$(ProjectPath)/../../../../../../../src/os/rtos/include;$(ProjectPath)/../../../../../../../src/user</IncludePath>
+        <Optim>Optimize more (-O2)</Optim>
+        <DebugLevel>Maximum (-g3)</DebugLevel>
+        <IncludePath>$(CDKPath)/CSKY/MinGW/csky-abiv2-elf-toolchain/csky-elfabiv2/include;$(ProjectPath);$(ProjectPath)/../../../../../../../demo;$(ProjectPath)/../../../../../../../include;$(ProjectPath)/../../../../../../../include/app;$(ProjectPath)/../../../../../../../include/arch/xt804;$(ProjectPath)/../../../../../../../include/arch/xt804/csi_core;$(ProjectPath)/../../../../../../../include/arch/xt804/csi_dsp;$(ProjectPath)/../../../../../../../include/bt;$(ProjectPath)/../../../../../../../include/driver;$(ProjectPath)/../../../../../../../include/net;$(ProjectPath)/../../../../../../../include/os;$(ProjectPath)/../../../../../../../include/platform;$(ProjectPath)/../../../../../../../include/wifi;$(ProjectPath)/../../../../../../../platform/common/params;$(ProjectPath)/../../../../../../../platform/drivers/spi;$(ProjectPath)/../../../../../../../platform/inc;$(ProjectPath)/../../../../../../../platform/sys;$(ProjectPath)/../../../../../../../src/app;$(ProjectPath)/../../../../../../../src/app/bleapp;$(ProjectPath)/../../../../../../../src/app/btapp;$(ProjectPath)/../../../../../../../src/app/cJSON;$(ProjectPath)/../../../../../../../src/app/dhcpserver;$(ProjectPath)/../../../../../../../src/app/dnsserver;$(ProjectPath)/../../../../../../../src/app/fatfs;$(ProjectPath)/../../../../../../../src/app/httpclient;$(ProjectPath)/../../../../../../../src/app/iperf;$(ProjectPath)/../../../../../../../src/app/libcoap/include;$(ProjectPath)/../../../../../../../src/app/libwebsockets-2.1-stable;$(ProjectPath)/../../../../../../../src/app/mDNS/mDNSCore;$(ProjectPath)/../../../../../../../src/app/mDNS/mDNSPosix;$(ProjectPath)/../../../../../../../src/app/mbedtls/include;$(ProjectPath)/../../../../../../../src/app/mbedtls/include/mbedtls;$(ProjectPath)/../../../../../../../src/app/mbedtls/ports;$(ProjectPath)/../../../../../../../src/app/mqtt;$(ProjectPath)/../../../../../../../src/app/oneshotconfig;$(ProjectPath)/../../../../../../../src/app/ota;$(ProjectPath)/../../../../../../../src/app/ping;$(ProjectPath)/../../../../../../../src/app/polarssl/include;$(ProjectPath)/../../../../../../../src/app/web;$(ProjectPath)/../../../../../../../src/app/wm_atcmd;$(ProjectPath)/../../../../../../../src/bt/blehost/ext/tinycrypt/include;$(ProjectPath)/../../../../../../../src/bt/blehost/ext/tinycrypt/include/tinycrypt;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/include;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/include/host;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/mesh/include;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/mesh/include/mesh;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/porting/w800/include;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/services/gap/include;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/services/gap/include/services/gap;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/services/gatt/include;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/services/gatt/include/services/gatt;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/src;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/store/config/include;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/store/config/include/store/config;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/store/config/src;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/store/ram/include;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/store/ram/include/store/ram;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/util/include;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/util/include/host/util;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/include;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/include/nimble;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/transport/uart/include;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/transport/uart/include/transport/uart;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include/hal;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include/log;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include/log_common;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include/logcfg;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include/mem;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include/modlog;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include/nimble;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include/os;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include/stats;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include/syscfg;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include/sysflash;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include/sysinit;$(ProjectPath)/../../../../../../../src/network/api_wm;$(ProjectPath)/../../../../../../../src/network/lwip2.1.3/apps/httpd;$(ProjectPath)/../../../../../../../src/network/lwip2.1.3/apps/snmp;$(ProjectPath)/../../../../../../../src/network/lwip2.1.3/include;$(ProjectPath)/../../../../../../../src/os/rtos/include;$(ProjectPath)/../../../../../../../src/app/POSIX/include;$(ProjectPath)/../../../../../../../src/app/POSIX/FreeRTOS-Plus-POSIX/include;$(ProjectPath)/../../../../../../../src/app/POSIX/FreeRTOS-Plus-POSIX/include/portable</IncludePath>
         <OtherFlags>-fdata-sections -c</OtherFlags>
         <Verbose>no</Verbose>
         <Ansi>no</Ansi>
@@ -3659,7 +3343,7 @@
       <Asm>
         <Define/>
         <Undefine/>
-        <IncludePath>$(CDKPath)/CSKY/csi/csi_core/csi_cdk/;$(CDKPath)/CSKY/csi/csi_core/include/;$(CDKPath)/CSKY/csi/csi_driver/include/;$(ProjectPath);$(ProjectPath)/../../../../../../../components/audio;$(ProjectPath)/../../../../../../../components/audio_pvmp3dec/include;$(ProjectPath)/../../../../../../../include;$(ProjectPath)/../../../../../../../include/arch/xt804;$(ProjectPath)/../../../../../../../include/arch/xt804/csi_core;$(ProjectPath)/../../../../../../../include/arch/xt804/csi_dsp;$(ProjectPath)/../../../../../../../include/os;$(ProjectPath)/../../../../../../../include/platform;$(ProjectPath)/../../../../../../../src/app/bleapp;$(ProjectPath)/../../../../../../../src/app/btapp;$(ProjectPath)/../../../../../../../src/app/factorycmd;$(ProjectPath)/../../../../../../../src/app/fatfs;$(ProjectPath)/../../../../../../../src/bt/blehost/ext/tinycrypt/include/tinycrypt;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/include/host;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/mesh/include/mesh;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/mesh/src;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/services/gap/include/services/gap;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/services/gatt/include/services/gatt;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/src;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/store/config/include/store/config;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/store/config/src;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/store/ram/include/store/ram;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/util/include/host/util;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/include/nimble;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/transport/uart/include/transport/uart;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include/hal;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include/log;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include/log_common;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include/logcfg;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include/mem;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include/modlog;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include/nimble;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include/os;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include/stats;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include/syscfg;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include/sysflash;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include/sysinit;$(ProjectPath)/../../../../../../../src/os/rtos/include;$(ProjectPath)/../../../../../../../src/user;$(ProjectPath)//camera</IncludePath>
+        <IncludePath>$(CDKPath)/CSKY/csi/csi_core/csi_cdk/;$(CDKPath)/CSKY/csi/csi_core/include/;$(CDKPath)/CSKY/csi/csi_driver/include/;$(ProjectPath);$(ProjectPath)/../../../../../../../include;$(ProjectPath)/../../../../../../../include/arch/xt804;$(ProjectPath)/../../../../../../../include/arch/xt804/csi_core;$(ProjectPath)/../../../../../../../include/arch/xt804/csi_dsp;$(ProjectPath)/../../../../../../../include/os;$(ProjectPath)/../../../../../../../include/platform;$(ProjectPath)/../../../../../../../src/app/bleapp;$(ProjectPath)/../../../../../../../src/app/btapp;$(ProjectPath)/../../../../../../../src/app/fatfs;$(ProjectPath)/../../../../../../../src/bt/blehost/ext/tinycrypt/include/tinycrypt;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/include/host;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/mesh/include/mesh;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/mesh/src;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/services/gap/include/services/gap;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/services/gatt/include/services/gatt;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/src;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/store/config/include/store/config;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/store/config/src;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/store/ram/include/store/ram;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/host/util/include/host/util;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/include/nimble;$(ProjectPath)/../../../../../../../src/bt/blehost/nimble/transport/uart/include/transport/uart;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include/hal;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include/log;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include/log_common;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include/logcfg;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include/mem;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include/modlog;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include/nimble;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include/os;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include/stats;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include/syscfg;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include/sysflash;$(ProjectPath)/../../../../../../../src/bt/blehost/porting/w800/include/sysinit;$(ProjectPath)/../../../../../../../src/os/rtos/include</IncludePath>
         <OtherFlags/>
         <DebugLevel>gdwarf2</DebugLevel>
       </Asm>
@@ -3669,7 +3353,7 @@
         <LDFile>$(ProjectPath)..\..\..\..\..\..\..\ld\w800\gcc_csky.ld</LDFile>
         <LibName>btcontroller;wlan;dsp</LibName>
         <LibPath>..\..\..\..\..\..\..\lib\w800</LibPath>
-        <OtherFlags>-Wl,-zmax-page-size=1024 -mhard-float  -lcamera -lm</OtherFlags>
+        <OtherFlags>-Wl,-zmax-page-size=1024 -mhard-float</OtherFlags>
         <AutoLDFile>no</AutoLDFile>
         <LinkType/>
       </Linker>
@@ -3695,13 +3379,13 @@
           <Delay>10</Delay>
           <WaitReset>50</WaitReset>
           <DDC>yes</DDC>
-          <TRST>yes</TRST>
+          <TRST>no</TRST>
           <DebugPrint>no</DebugPrint>
           <Connect>Normal</Connect>
-          <ResetType>Hard Reset</ResetType>
+          <ResetType>soft</ResetType>
           <SoftResetVal>0</SoftResetVal>
-          <RTOSType>Bare Metal</RTOSType>
-          <DownloadToFlash>yes</DownloadToFlash>
+          <RTOSType>None</RTOSType>
+          <DownloadToFlash>no</DownloadToFlash>
           <ResetAfterConnect>yes</ResetAfterConnect>
           <GDBName/>
           <GDBServerType>Local</GDBServerType>
@@ -3727,30 +3411,26 @@
       <Flash>
         <InitFile>$(ProjectPath)..\..\..\..\..\..\..\tools\w800\utilities\flashinit</InitFile>
         <Erase>Erase Sectors</Erase>
-        <Algorithms Path="">W800_Flash_Tool.elf</Algorithms>
-        <Program>yes</Program>
-        <Verify>yes</Verify>
-        <ResetAndRun>yes</ResetAndRun>
-        <ResetType>Hard Reset</ResetType>
-        <SoftResetVal>0</SoftResetVal>
+        <Algorithms Path=""/>
+        <Program>no</Program>
+        <Verify>no</Verify>
+        <ResetAndRun>no</ResetAndRun>
+        <ResetType>Soft Reset</ResetType>
+        <SoftResetVal/>
         <External>no</External>
         <Command/>
         <Arguments/>
       </Flash>
     </BuildConfig>
   </BuildConfigs>
-  <VendorInfo>
-    <VendorName>NULL</VendorName>
-  </VendorInfo>
   <DebugSessions>
     <watchExpressions/>
-    <memoryExpressions>UserMain;;;</memoryExpressions>
-    <statistics>;;32;;MHZ;</statistics>
+    <memoryExpressions/>
+    <statistics/>
     <peripheralTabs/>
-    <WatchDisplayFormat>1</WatchDisplayFormat>
-    <LocalDisplayFormat>1</LocalDisplayFormat>
+    <WatchDisplayFormat/>
+    <LocalDisplayFormat/>
     <debugLayout/>
-    <memoryTabColSizeExpressions>100:8;100:8;100:8;100:8;</memoryTabColSizeExpressions>
-    <QuickWatchDisplayFormat/>
+    <memoryTabColSizeExpressions/>
   </DebugSessions>
 </Project>

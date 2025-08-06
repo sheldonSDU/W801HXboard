@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CDK_Workspace Name="CDK_WS" Database="">
- <Project Name="W800_SDK" Path="tools/w800/projects/SDK_Project/project/CDK_WS/W800_SDK/W800_SDK.cdkproj" Active="Yes"/>
+  <Project Name="W800_SDK" Path="tools/w800/projects/SDK_Project/project/CDK_WS/W800_SDK/W800_SDK.cdkproj" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
