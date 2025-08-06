@@ -10,7 +10,7 @@ Project_Build:
 
 Project_PostBuild:
 	@echo Executing Post Build commands ...
-	@cd tools/w800/projects/SDK_Project/project/CDK_WS/W800_SDK && export CDKPath="D:/C-Sky/CDK" CDK_VERSION="V2.24.2" ProjectName="W800_SDK" ProjectPath="D:/WinnerMicro/W801HXboard/tools/w800/projects/SDK_Project/project/CDK_WS/W800_SDK/" && ../../../../../../../tools/w800/utilities/cdk_aft_build.sh;../../../../../../../tools/w800/utilities/aft_build_project.sh
+	@cd tools/w800/projects/SDK_Project/project/CDK_WS/W800_SDK && export CDKPath="D:/C-Sky/CDK" CDK_VERSION="V2.24.2" ProjectName="W800_SDK" ProjectPath="D:/HXFuture/HxWMProject/W801HXboard/tools/w800/projects/SDK_Project/project/CDK_WS/W800_SDK/" && ../../../../../../../tools/w800/utilities/cdk_aft_build.sh;../../../../../../../tools/w800/utilities/aft_build_project.sh
 	@echo Done
 
 
