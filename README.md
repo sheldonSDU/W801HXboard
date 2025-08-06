@@ -4,8 +4,7 @@ Based on WinnerMicro W80x MCU and W801 SDK
 # 启动WinnerMicro  
 Since 2025.08
 HX.LTD
-多端测试
-ssh绑定
+
 
 # Github推送命令参考命令
  1 git add .  # 添加所有内容，也可以单独添加待更新的文件
