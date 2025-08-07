@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Session Name="D:\HXFuture\HxWMProject\W801HXboard\CDK_WS.cdkws">
-  <int Value="2" Name="m_selectedTab"/>
+  <int Value="0" Name="m_selectedTab"/>
   <wxString Value="D:\HXFuture\HxWMProject\W801HXboard\CDK_WS.cdkws" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
       <wxString Value="D:\HXFuture\HxWMProject\W801HXboard\app\main.c" Name="FileName"/>
       <wxString Value="W800_SDK" Name="ProjectName"/>
-      <int Value="138" Name="FirstVisibleLine"/>
-      <int Value="23" Name="CurrentLine"/>
+      <int Value="23" Name="FirstVisibleLine"/>
+      <int Value="31" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
@@ -38,8 +38,16 @@
     <TabInfo>
       <wxString Value="D:\HXFuture\HxWMProject\W801HXboard\app\nvs.h" Name="FileName"/>
       <wxString Value="W800_SDK" Name="ProjectName"/>
-      <int Value="52" Name="FirstVisibleLine"/>
-      <int Value="17" Name="CurrentLine"/>
+      <int Value="45" Name="FirstVisibleLine"/>
+      <int Value="24" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="D:\HXFuture\HxWMProject\W801HXboard\app\wm_wifi_manager.c" Name="FileName"/>
+      <wxString Value="W800_SDK" Name="ProjectName"/>
+      <int Value="284" Name="FirstVisibleLine"/>
+      <int Value="70" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>

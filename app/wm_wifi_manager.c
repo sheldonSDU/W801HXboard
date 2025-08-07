@@ -17,7 +17,7 @@
 
 // 全局变量
 static wifi_state_t g_wifi_state = WIFI_STATE_DISCONNECTED;
-static wifi_config_t g_wifi_config;
+wifi_config_t g_wifi_config;
 static bool g_wifi_initialized = false;
 
 
@@ -36,20 +36,6 @@ static bool g_wifi_initialized = false;
                ip4_addr3(ip_2_ip4(ip)),
                ip4_addr4(ip_2_ip4(ip)));
     }
-#if TLS_CONFIG_IPV6
-    else  // IPv6地址
-    {
-        printf("IPv6地址: %04x:%04x:%04x:%04x:%04x:%04x:%04x:%04x\n",
-               HTONS(((ip6_addr_t *)ip)->addr[0]),
-               HTONS(((ip6_addr_t *)ip)->addr[1]),
-               HTONS(((ip6_addr_t *)ip)->addr[2]),
-               HTONS(((ip6_addr_t *)ip)->addr[3]),
-               HTONS(((ip6_addr_t *)ip)->addr[4]),
-               HTONS(((ip6_addr_t *)ip)->addr[5]),
-               HTONS(((ip6_addr_t *)ip)->addr[6]),
-               HTONS(((ip6_addr_t *)ip)->addr[7]));
-    }
-#endif
 }
 
 
@@ -247,17 +233,46 @@ int wifi_manager_load_config(void)
         return WM_FAILED;
     }
 
+    // 调试信息：显示NVS已使用条目数
+    extern uint8_t nvs_used_entries;
+    printf("当前NVS已使用条目数: %d/%d\n", nvs_used_entries, NVS_MAX_ENTRIES);
+
     // 从NVS加载配置
-    if (nvs_get("wifi_ssid", g_wifi_config.ssid, sizeof(g_wifi_config.ssid)) != WM_SUCCESS)
-    {
-        printf("从NVS加载SSID失败，使用默认值\n");
+    printf("尝试从NVS加载WiFi配置...\n");
+    int ret = nvs_get("wifi_ssid", g_wifi_config.ssid, sizeof(g_wifi_config.ssid), NULL);
+    if (ret != WM_SUCCESS) {
+        printf("从NVS加载SSID失败，错误码: %d\n", ret);
+        printf("从NVS加载SSID失败，使用默认值: %s\n", WIFI_SSID_DEFAULT);
         strncpy(g_wifi_config.ssid, WIFI_SSID_DEFAULT, sizeof(g_wifi_config.ssid) - 1);
+        
+        // 尝试保存默认配置到NVS
+        printf("尝试将默认SSID保存到NVS...\n");
+        ret = nvs_set("wifi_ssid", WIFI_SSID_DEFAULT);
+        if (ret != WM_SUCCESS) {
+            printf("保存默认SSID到NVS失败，错误码: %d\n", ret);
+        } else {
+            printf("保存默认SSID到NVS成功\n");
+        }
+    } else {
+        printf("从NVS加载SSID成功: %s\n", g_wifi_config.ssid);
     }
 
-    if (nvs_get("wifi_password", g_wifi_config.password, sizeof(g_wifi_config.password)) != WM_SUCCESS)
-    {
+    ret = nvs_get("wifi_password", g_wifi_config.password, sizeof(g_wifi_config.password), NULL);
+    if (ret != WM_SUCCESS) {
+        printf("从NVS加载密码失败，错误码: %d\n", ret);
         printf("从NVS加载密码失败，使用默认值\n");
         strncpy(g_wifi_config.password, WIFI_PASSWORD_DEFAULT, sizeof(g_wifi_config.password) - 1);
+        
+        // 尝试保存默认配置到NVS
+        printf("尝试将默认密码保存到NVS...\n");
+        ret = nvs_set("wifi_password", WIFI_PASSWORD_DEFAULT);
+        if (ret != WM_SUCCESS) {
+            printf("保存默认密码到NVS失败，错误码: %d\n", ret);
+        } else {
+            printf("保存默认密码到NVS成功\n");
+        }
+    } else {
+        printf("从NVS加载密码成功\n");
     }
 
     printf("从NVS加载WiFi配置成功: SSID=%s\n", g_wifi_config.ssid);

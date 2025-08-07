@@ -42,6 +42,9 @@ typedef struct {
     u32 connect_timeout;
 } wifi_config_t;
 
+// 外部变量声明
+extern wifi_config_t g_wifi_config;
+
 // WiFi功能函数声明
 /**
  * @brief 初始化WiFi管理器

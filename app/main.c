@@ -28,13 +28,14 @@ void UserMain(void)
     // 从NVS加载WiFi配置
     wifi_manager_load_config();
 
-    // 连接WiFi
-    wifi_manager_connect(WIFI_SSID_DEFAULT, WIFI_PASSWORD_DEFAULT);
+    // 连接WiFi (使用从NVS加载的配置)
+    printf("尝试连接WiFi: %s\n", g_wifi_config.ssid);
+    wifi_manager_connect(g_wifi_config.ssid, g_wifi_config.password);
     
     // 测试NVS功能
     nvs_set("test_key", "test_value");
     char read_value[256];
-    if (nvs_get("test_key", read_value, sizeof(read_value)) == WM_SUCCESS) {
+    if (nvs_get("test_key", read_value, sizeof(read_value), NULL) == WM_SUCCESS) {
         printf("Read from NVS: %s\n", read_value);
     } else {
         printf("Failed to read from NVS\n");

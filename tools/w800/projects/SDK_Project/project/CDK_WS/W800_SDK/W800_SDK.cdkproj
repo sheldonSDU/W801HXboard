@@ -2573,7 +2573,9 @@
     <File Name="../../../../../../../app/nvs.c">
       <FileOption/>
     </File>
-    <File Name="../../../../../../../app/wm_wifi_manager.c"/>
+    <File Name="../../../../../../../app/wm_wifi_manager.c">
+      <FileOption/>
+    </File>
   </VirtualDirectory>
   <VirtualDirectory Name="platform">
     <VirtualDirectory Name="arch">
@@ -3231,16 +3233,6 @@
   <VendorInfo>
     <VendorName>NULL</VendorName>
   </VendorInfo>
-  <DebugSessions>
-    <watchExpressions/>
-    <memoryExpressions/>
-    <statistics/>
-    <peripheralTabs/>
-    <WatchDisplayFormat/>
-    <LocalDisplayFormat/>
-    <debugLayout/>
-    <memoryTabColSizeExpressions/>
-  </DebugSessions>
   <ToolsConfig>
     <Compiler>
       <Name>CKV2ElfMinilib</Name>
@@ -3469,4 +3461,15 @@
       </Flash>
     </BuildConfig>
   </BuildConfigs>
+  <DebugSessions>
+    <watchExpressions/>
+    <memoryExpressions/>
+    <statistics/>
+    <peripheralTabs/>
+    <WatchDisplayFormat/>
+    <LocalDisplayFormat/>
+    <debugLayout/>
+    <memoryTabColSizeExpressions/>
+    <QuickWatchDisplayFormat/>
+  </DebugSessions>
 </Project>
