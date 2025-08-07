@@ -1,21 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Session Name="D:\HXFuture\HxWMProject\W801HXboard\CDK_WS.cdkws">
-  <int Value="0" Name="m_selectedTab"/>
+  <int Value="2" Name="m_selectedTab"/>
   <wxString Value="D:\HXFuture\HxWMProject\W801HXboard\CDK_WS.cdkws" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
-      <wxString Value="D:\HXFuture\HxWMProject\W801HXboard\include\net\wm_sockets2.1.3.h" Name="FileName"/>
+      <wxString Value="D:\HXFuture\HxWMProject\W801HXboard\app\main.c" Name="FileName"/>
       <wxString Value="W800_SDK" Name="ProjectName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="17" Name="CurrentLine"/>
+      <int Value="138" Name="FirstVisibleLine"/>
+      <int Value="23" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
-      <wxString Value="D:\HXFuture\HxWMProject\W801HXboard\include\net\wm_sockets.h" Name="FileName"/>
+      <wxString Value="D:\HXFuture\HxWMProject\W801HXboard\demo\wm_socket_client_demo.c" Name="FileName"/>
+      <wxString Value="W800_SDK" Name="ProjectName"/>
+      <int Value="223" Name="FirstVisibleLine"/>
+      <int Value="1" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="D:\HXFuture\HxWMProject\W801HXboard\demo\wm_websockets_demo.c" Name="FileName"/>
+      <wxString Value="W800_SDK" Name="ProjectName"/>
+      <int Value="160" Name="FirstVisibleLine"/>
+      <int Value="1" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="D:\HXFuture\HxWMProject\W801HXboard\app\nvs.c" Name="FileName"/>
       <wxString Value="W800_SDK" Name="ProjectName"/>
       <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="12" Name="CurrentLine"/>
+      <int Value="10" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="D:\HXFuture\HxWMProject\W801HXboard\app\nvs.h" Name="FileName"/>
+      <wxString Value="W800_SDK" Name="ProjectName"/>
+      <int Value="52" Name="FirstVisibleLine"/>
+      <int Value="17" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>

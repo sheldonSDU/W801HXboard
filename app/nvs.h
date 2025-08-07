@@ -18,7 +18,7 @@
 #define NVS_FLASH_BASE_ADDR 0x1F0303
 #define NVS_KEY_SIZE 32
 #define NVS_VALUE_SIZE 256
-#define NVS_MAX_ENTRIES 10
+#define NVS_MAX_ENTRIES 100  // 设置NVS条数为100条
 
 // NVS条目结构体
 typedef struct {

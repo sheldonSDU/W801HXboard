@@ -32,7 +32,7 @@ static void demo_gpio_isr_callback(void *context)
 	}
 }
 
-//gpio ≤‚ ‘≥Ã–Ú
+//gpio ????
 int gpio_demo(void)
 {
 	u16 gpio_pin;
